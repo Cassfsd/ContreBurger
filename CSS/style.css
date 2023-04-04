@@ -31,12 +31,12 @@ nav{
 .menu-horizontal > li > a{
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
-.menu-horizontal > li:hover{
+/* .menu-horizontal > li:hover{
     background-color: rgb(163, 80, 1);
-}
+} */
 .menu-vertical{
     position: absolute;
     display: none;
@@ -44,9 +44,9 @@ nav{
     width: 200px;
     background-color:rgba(0, 0, 0, .5);
 }
-.menu-horizontal li:hover .menu-vertical{
+/* .menu-horizontal li:hover .menu-vertical{
     display: block;
-}
+} */
 .menu-vertical li:hover{
     background-color: black;
 }
@@ -58,15 +58,15 @@ nav{
     padding: 15px 15px 15px 20px;
 }
 
-#html{
+/* #html{
     margin: auto;
     padding: 20px;
     max-width: 900px;
     background: white;
 
-}
+} */
 
-#searchbox {
+/* #searchbox {
     width: 50%;
     margin: auto;
     }
@@ -81,9 +81,57 @@ nav{
     }
 
 #search button:hover{
-    opacity: .8;
+    opacity: 8;
 }
 
 #search input:hover{
-    opacity: .8;
+    opacity: 8;
+} */
+
+/*Comienza estilo de main*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.menu img{
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+   }
+ .producto-precio{
+    display: flex;
+    align-items: center;
+ }
+
+   .ingredientes li, h2
+   {
+    list-style: none; 
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+   .precio{
+  padding-left: 100px;
+
+   }
+
+.full-maquina{
+    
+    background-color: rgba(255, 255, 255, 0.874);
+   }
+.agregar{
+    background-color: rgb(193, 155, 29);
+    color:rgb(255, 255, 255);
+    border: none;
+    font-size: medium;
+    padding: 10px;
+   display: flex;
+   justify-content:center;
+   align-content:center ;
+    
+   
 }
