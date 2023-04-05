@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'open sans';
 }
-body{
+
+body {
     background-image: url(../img/burger.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
 }
-nav{ 
+
+nav {
     max-width: 900px;
     margin: auto;
     background-color: #333;
@@ -21,37 +24,41 @@ nav{
     margin-top: 50px;
     border-radius: 12px;
     box-shadow: 5px 5px 15px black;
-    
+
 }
-.menu-horizontal{
+
+.menu-horizontal {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
-.menu-horizontal > li > a{
+
+.menu-horizontal>li>a {
     display: block;
     padding: 15px 20px;
     color: whitesmoke;
     text-decoration: none;
 }
+
 /* .menu-horizontal > li:hover{
     background-color: rgb(163, 80, 1);
 } */
-.menu-vertical{
+.menu-vertical {
     position: absolute;
     display: none;
     list-style: none;
     width: 200px;
-    background-color:rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
 }
+
 /* .menu-horizontal li:hover .menu-vertical{
     display: block;
 } */
-.menu-vertical li:hover{
+.menu-vertical li:hover {
     background-color: black;
 }
 
-.menu-vertical li a{
+.menu-vertical li a {
     display: block;
     color: white;
     text-decoration: none;
@@ -88,50 +95,112 @@ nav{
     opacity: 8;
 } */
 
-/*Comienza estilo de main*/
-.menu{
+/*Comienza estilo de MAIN*/
+.menu {
     display: flex;
-    justify-content: space-between;
-    margin: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    width: 80vw;
+
 }
 
-.menu img{
+img {
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 400px;
     height: 300px;
     padding: 15px;
-   }
- .producto-precio{
-    display: flex;
-    align-items: center;
- }
 
-   .ingredientes li, h2
-   {
-    list-style: none; 
+}
+
+.producto-precio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ingredientes,
+h2 {
+    list-style: none;
     text-align: left;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
-   .precio{
-  padding-left: 100px;
+h2 {
+    flex-wrap: wrap;
+    width: 40vw;
+}
 
-   }
+.precio {
+    width: 10vw;
 
-.full-maquina{
-    
+}
+
+.full-maquina,
+.cheddar,
+.clasica {
+    border: 2px solid #a7a7a7;
+    margin: 5px;
     background-color: rgba(255, 255, 255, 0.874);
-   }
-.agregar{
+    width: 90vw;
+}
+
+.agregar {
+    display: flex;
     background-color: rgb(193, 155, 29);
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     border: none;
     font-size: medium;
     padding: 10px;
-   display: flex;
-   justify-content:center;
-   align-content:center ;
-    
-   
+    margin: 10px 20px;
+
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 850px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegador {
+        width: 90vw;
+    }
+
+    .menu-horizontal li {
+        /*Verificar ese margen que hay en contacto*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:4px;
+        width: 95vw;
+
+    }
+
+.full-maquina,
+.cheddar,
+.clasica {
+    border: 2px solid #a7a7a7;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.874);
+    width: 90vw;
+}
+
+img  {
+    width: 90vw;
+    height: 30vh;
+}
+
 }
