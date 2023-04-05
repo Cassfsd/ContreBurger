@@ -16,35 +16,30 @@
         <input placeholder="search" type="text">
         <button>Search</button> -->
     <header>
-        <nav clas="navegador">
-            <ul class="menu-horizontal">
-                <li><a href="#">Inicio</a></li>
-                <!-- href="#">Completa</a></li>
-            <li><a href="#">Cheddar</a></li>
-            <li><a href="#">Full Maquina</a></li>
-        </ul>
-        </li> -->
-                <!-- <li>
-                <a href="#">Postres</a>
-                <ul class="menu-vertical">
-                    <li><a href="#">3 Leches</a></li>
-                    <li><a href="#">Turron de Coco</a></li>
-                 </ul>
-            </li> -->
-                <li><a href="#">Promos</a></li>
-                <li>
+        <nav>
+                <ul class="menu-horizontal" ><!--Revisar si esto puede ir asi?-->
+                <li class="menu-item active" >
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Promos</a>
+                </li>
+                <li class="menu-item" >
                     <a href="#">Trabajá con nosotros</a><!--REvisar esto de desplegable-->
-                    <ul class="menu-vertical">
+                    <ul class="menu-vertical menu-item">
                         <li><a href="#">Envia tu CV</a></li>
                         <li><a href="#">Franquicias</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contacto</a></li>
+                <li class="menu-item">
+                    <a href="#">Contacto</a>
+                </li>
             </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="menu">
+        <div class="menu_burgers">
             <!--Hamburguesa 1-->
             <div class="full-maquina">
                 <img src="./img/full maquina.jpeg" alt="hamburguesa-fullmaquina">
@@ -62,7 +57,7 @@
             <div class="cheddar">
                 <img src="./cheese burger.jpeg" alt="hamburguesa-cheddar">
                 <div class="producto-precio">
-                    <h2>Cheddar</h2>
+                    <h2 class="hamb2">Cheddar</h2>
                     <p class="precio">$2000</p>
                 </div>
                 <div class="ingredientes">
@@ -74,7 +69,7 @@
                 <div class="clasica">
                     <img src="./clasica.jpeg" alt="hamburguesa-clasica">
                     <div class="producto-precio">
-                        <h2>Clásica</h2>
+                        <h2 class="hamb3">Clásica</h2>
                         <p class="precio">$2500</p>
                     </div>
                     <div class="ingredientes">
@@ -88,6 +83,7 @@
             </div>
                
         </main>
+        <script src="JS/main.js"></script>
         </body>|
                
                 <!--Promos

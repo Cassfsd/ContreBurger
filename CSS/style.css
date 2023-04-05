@@ -1,3 +1,7 @@
+/*Falta trabajar el diseño desktop y pulir detalles de algunos elementos
+Hacer merge con el form*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
@@ -40,9 +44,6 @@ nav {
     text-decoration: none;
 }
 
-/* .menu-horizontal > li:hover{
-    background-color: rgb(163, 80, 1);
-} */
 .menu-vertical {
     position: absolute;
     display: none;
@@ -51,9 +52,6 @@ nav {
     background-color: rgba(0, 0, 0, .5);
 }
 
-/* .menu-horizontal li:hover .menu-vertical{
-    display: block;
-} */
 .menu-vertical li:hover {
     background-color: black;
 }
@@ -65,38 +63,9 @@ nav {
     padding: 15px 15px 15px 20px;
 }
 
-/* #html{
-    margin: auto;
-    padding: 20px;
-    max-width: 900px;
-    background: white;
-
-} */
-
-/* #searchbox {
-    width: 50%;
-    margin: auto;
-    }
-
-#searchbox input,button{
-        width: 75%;
-        border: 2px solid white;
-        font-size: 18px;
-        padding: 12px;
-        background: transparent;
-        color: white;
-    }
-
-#search button:hover{
-    opacity: 8;
-}
-
-#search input:hover{
-    opacity: 8;
-} */
 
 /*Comienza estilo de MAIN*/
-.menu {
+.menu_burgers {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -123,7 +92,6 @@ img {
 
 .ingredientes,
 h2 {
-    list-style: none;
     text-align: left;
     margin-left: 20px;
     margin-bottom: 5px;
@@ -160,7 +128,15 @@ h2 {
 
 }
 
-@media screen and (min-width: 380px) and (max-width: 850px) {
+/*Menu Hamburguesa*/
+li.menu-item a:hover,
+li.menu-item.active{
+    background: rgb(193, 155, 29);
+    transition: background-color 0.3s;
+}
+
+
+@media screen and (min-width: 380px) and (max-width: 844px) {
     * {
         margin: 0;
         padding: 0;
@@ -170,17 +146,16 @@ h2 {
         width: 90vw;
     }
 
-    .menu-horizontal li {
-        /*Verificar ese margen que hay en contacto*/
+    .menu-horizontal {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
         flex-wrap: wrap;
         list-style: none;
 
     }
 
-    .menu {
+    .menu_burgers {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -203,4 +178,69 @@ img  {
     height: 30vh;
 }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegador {
+        width: 90vw;
+    }
+
+    .menu_burgers {
+        justify-content:center;
+        flex-wrap: wrap;
+        margin:4px;
+        width: 100vw;
+
+    }
+
+    .full-maquina,.cheddar,
+    .clasica{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    img {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+       width:40vw;
+    
+    }
+    
+    .producto-precio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .precio{
+      margin-left: 80px;
+    }
+   
+.hamb2,
+.hamb3{
+    margin-left: 30px;
+
+}
+
+    .ingredientes p{
+       display: flex;
+       justify-content: flex-start;
+       margin: 10px;
+    }
+    
+    h2 {
+        flex-wrap: wrap;
+        width: 40vw;
+    }
 }
