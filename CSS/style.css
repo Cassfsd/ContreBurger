@@ -12,7 +12,7 @@ Hacer merge con el form*/
 }
 
 body {
-    background-image: url(../img/burger.jpg);
+    background-image: url(../img2/burger.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,12 +74,12 @@ nav {
 
 }
 
-img {
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 300px;
+    width: 70vw;
+    height: 30vh;
     padding: 15px;
 
 }
