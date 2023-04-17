@@ -17,76 +17,80 @@
         <button>Search</button> -->
     <header>
         <nav>
-                <ul class="menu-horizontal" ><!--Revisar si esto puede ir asi?-->
-                <li class="menu-item active" >
+            <ul class="menu-horizontal"><!--Revisar si esto puede ir asi?-->
+                <li class="menu-item">
                     <a href="#">Inicio</a>
                 </li>
-                <li class="menu-item">
+                <li>
+                    <a href="#" id="menu_navbar">Menu</a>
+                </li>
+                <li>
                     <a href="#">Promos</a>
                 </li>
-                <li class="menu-item" >
-                    <a href="#">Trabajá con nosotros</a><!--REvisar esto de desplegable-->
-                    <ul class="menu-vertical menu-item">
-                        <li><a href="#">Envia tu CV</a></li>
-                        <li><a href="#">Franquicias</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Contacto</a>
+                <ul class="menu-vertical">
+                    <li>Trabajá con nosotros
+                    <li><a href="#">Envia tu CV</a></li>
+                    <li><a href="#">Franquicias</a></li>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#" id="formulario_menu">Contacto</a>
                 </li>
             </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="menu_burgers">
+            <video class="video_main" src="./img2/CONTREBURGER.mp4" type="video/mp4" autoplay loop></video>
+
+        <div class="menu_burgers" id="allmenu_burgers">
             <!--Hamburguesa 1-->
             <div class="full-maquina">
-                <img class="menu full" src="./img2/full maquina.jpeg" alt="hamburguesa-fullmaquina">
+                <img class="burger full" src="./img2/full maquina.jpeg" alt="hamburguesa-fullmaquina">
                 <div class="producto-precio">
-                    <h2>Full Máquina</h2>
-                    <p class="precio">$2900</p>
+                    <h2 class="hamb1">Full Máquina</h2>
+                    <p class="precio_a">$2900</p>
                 </div>
-                    <div class="ingredientes">
-                        <p>Pan de papa con triple medallón, cheddar x6, bacon x2, huevo, cebolla morada, pepinillos, huevo con lluvia de ciboulette y pimienta.</p>
-                        <button class="agregar">Agregar</button>
-                    </div>
-        
+                <div class="ingredientes">
+                    <p>Pan de papa con triple medallón, cheddar x6, bacon x2, huevo, cebolla morada, pepinillos, huevo
+                        con lluvia de ciboulette y pimienta.</p>
+                    <button class="agregar">Agregar</button>
+                </div>
+
             </div>
             <!--Hamburguesa 2-->
             <div class="cheddar">
-                <img class="menu cheese" src="./img2/cheese burger.jpeg" alt="hamburguesa-cheddar">
+                <img class="burger cheese" src="./img2/cheeseburger.jpeg" alt="hamburguesa-cheddar">
                 <div class="producto-precio">
                     <h2 class="hamb2">Cheddar</h2>
-                    <p class="precio">$2000</p>
+                    <p class="precio_b">$2000</p>
                 </div>
                 <div class="ingredientes">
                     <p>Pan de papa con doble medallón, cheddar x4, bacon x2 y un baño de cheddar.</p>
                     <button class="agregar">Agregar</button>
                 </div>
             </div>
-                <!--Hamburguesa 3-->
-                <div class="clasica">
-                    <img class="menu classic" src="./img2/clasica.jpeg" alt="hamburguesa-clasica">
-                    <div class="producto-precio">
-                        <h2 class="hamb3">Clásica</h2>
-                        <p class="precio">$2500</p>
-                    </div>
-                    <div class="ingredientes">
-                        <p>Pan de papa con doble medallón, cheddar x4, lechuga, tomate,cebolla,pickles y aderezo
-                            Thousand Island.</p>
-                        <button class="agregar">Agregar</button><!--Revisar lo de submit-->
-
-                    </div>
+            <!--Hamburguesa 3-->
+            <div class="clasica">
+                <img class="burger classic" src="./img2/clasica.jpeg" alt="hamburguesa-clasica">
+                <div class="producto-precio">
+                    <h2 class="hamb3">Clásica</h2>
+                    <p class="precio_c">$2500</p>
                 </div>
+                <div class="ingredientes">
+                    <p>Pan de papa con doble medallón, cheddar x4, lechuga, tomate,cebolla,pickles y aderezo
+                        Thousand Island.</p>
+                    <button class="agregar">Agregar</button><!--Revisar lo de submit-->
 
+                </div>
             </div>
-               
-        </main>
-        <script src="JS/main.js"></script>
-        </body>|
-               
-                <!--Promos
+        </div>
+    </main>
+    <!-- <script src="./JS/contreburger.js"></script>
+        <script src="./JS/mainCB.js"></script> -->
+</body>|
+
+<!--Promos
 <div class="promos">
 <h2>Aprovechá los miércoles y jueves de promo</h2>
 <p>Los miércoles y jueves podés pedir cualquiera de nuestros combos y pagando con tarjetas Santander, BBVA o Comafi y tenés un 15% de descuento. 
