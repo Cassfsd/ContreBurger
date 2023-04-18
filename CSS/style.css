@@ -1,7 +1,3 @@
-/*Falta trabajar el diseño desktop y pulir detalles de algunos elementos
-Hacer merge con el form*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
@@ -66,45 +62,35 @@ nav {
 
 /*Comienza estilo de MAIN*/
 
-.video_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.video_main{
     width: 100vw;
-    height: 95vh;
-    margin:30px
-
-
-}
+    height:95vh;
+    margin-top: 30px;
+    min-height: 100%;
+    min-height: 100%;
+    }
 
 .menu_burgers {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-   }
+    justify-content:flex-start;
+    margin:30px 50px;
+    width: 20vw;
+ 
+
+}
 
 .burger {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 30vw;
     height: 40vh;
-}
+    padding: 15px;
 
-.full,
-.cheese,
-.classic {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 25vw;
-    height: 35vh;
-    margin:15px;
 }
 
 .producto-precio {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -115,22 +101,9 @@ h2 {
     margin-bottom: 5px;
 }
 
-.description{
+h2 {
     width: 20vw;
 }
- 
-.precio_a{
-    margin-left: 170px;
-}
-
-.precio_b{
-    margin-left: 220px;
-}
-
-.precio_c{
-    margin-left:240px ;
-}
-
 
 
 .full-maquina,
@@ -144,164 +117,164 @@ h2 {
 
 .agregar {
     display: flex;
+    flex-wrap: wrap;
     background-color: rgb(193, 155, 29);
     color: rgb(255, 255, 255);
     border: none;
     font-size: medium;
     padding: 10px;
-    margin-left:  300px;
+    margin: 15px 300px;
     
 
 
 }
 
-/*Menu Hamburguesa*/
+/*Menu Hamburguesa
 li.menu-item a:hover,
-li.menu-item.active {
+li.menu-item.active{
     background: rgb(193, 155, 29);
     transition: background-color 0.3s;
-}
+}*/
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100vw;
     }
 
     .menu-horizontal {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
         list-style: none;
 
     }
 
-    .video_main {
+    .video_main{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 95vw;
+        width: 98vw;
         height: 100%;
         margin: 4px;
         min-height: 100%;
         min-height: 100%;
-        margin-top: 30px;
     }
 
-
-    .full-maquina,
-    .cheddar,
-    .clasica {
-        border: 1px solid #a7a7a7;
-        margin: 2px;
-        background-color: rgba(255, 255, 255, 0.874);
-        width: 95vw;
-    }
-
-    .full,
-    .cheese,
-    .classic {
+    .menu_burgers {
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        margin:4px;
         width: 95vw;
-        height: 30vh;
+       
 
     }
 
-    .agregar {
-        margin-left: 250px;
-    }
+.full-maquina,
+.cheddar,
+.clasica {
+    border: 2px solid #a7a7a7;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.874);
+    width: 90vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+img  {
+    width: 95vw;
+    height: 40vh;
+    padding-left: 20px;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
-    body {
-        width: 100vw;
-    }
+   
 
-    .video_main {
+.video_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 100%;
+    margin: 4px;
+    min-height: 100%;
+
+}
+
+    .menu_burgers {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 96vw;
-        height: 100%;
-        margin: 4px;
-        min-width: 100%;
-        min-height: 100%;
-        margin-top: 30px;
-
-
-    }
-
-
-    .full-maquina,
-    .cheddar,
-    .clasica {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content:center;
         flex-wrap: wrap;
-        margin: 4px;
+        margin:4px;
         width: 100vw;
 
-
-
     }
 
-    .full,
-    .cheese,
-    .classic {
+    .full-maquina,.cheddar,
+    .clasica{
         display: flex;
-        align-items: center;
-        width: 95vw;
-        height: 50vh;
-        /*Revisar el tema que está pegado al borde aca 
-        */
-
+       margin: 4px;
     }
 
+    .full{
+        width: 50vw;
+        height:100vh;
+    }
 
+    .cheese{
+        width:100vw;
+        height: 30vh;
+    }
+    
+
+    img {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:30vw;
+}
+    
     .producto-precio {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 80vw;
-
+        width: 30vw;
+        height: 30vh;
     }
 
-    .precio {
-
-        padding: 5px;
+    .precio{
+      margin-left: 80px;
     }
-
-    p {
-        padding-left: 70px;
-        width: 90vw;
-    }
-
-    .hamb1,
-    .hamb2,
-    .hamb3 {
-        align-items: center;
-
-
-    }
-
-    .agregar {
-
-        margin-left: 650px;
-    }
+ .hamb1,  
+.hamb2,
+.hamb3{
+    align-items: center;
+    margin-left: 30px;
 
 }
+
+    .ingredientes p{
+       display: flex;
+       justify-content: flex-start;
+       margin: 20px;
+    }
+    
+    h2 {
+        flex-wrap: wrap;
+        width: 40vw;
+    }
+}
+
+
+
+
+
