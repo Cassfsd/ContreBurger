@@ -65,15 +65,14 @@ nav {
 .video_main{
     width: 100vw;
     height:95vh;
-    margin-top: 30px;
-    min-height: 100%;
-    min-height: 100%;
+  
+   
     }
 
 .menu_burgers {
     display: flex;
     justify-content:flex-start;
-    margin:30px 50px;
+    margin:30px 10px;
     width: 20vw;
  
 
@@ -94,14 +93,22 @@ nav {
     align-items: center;
 }
 
-.ingredientes,
-h2 {
+.precio
+{ 
+    display: flex;
+justify-content: flex-end;
+  margin-left: 12em;
+}
+
+.ham,
+.description {
     text-align: left;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
 h2 {
+    padding: 0.8em;
     width: 20vw;
 }
 
@@ -118,12 +125,17 @@ h2 {
 .agregar {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
     background-color: rgb(193, 155, 29);
     color: rgb(255, 255, 255);
     border: none;
     font-size: medium;
     padding: 10px;
-    margin: 15px 300px;
+    margin-bottom: 10px;
+    
+    
+
     
 
 
@@ -149,6 +161,7 @@ li.menu-item.active{
         justify-content: space-around;
         flex-wrap: wrap;
         list-style: none;
+       
 
     }
 
@@ -156,7 +169,7 @@ li.menu-item.active{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 98vw;
+        width: 95vw;
         height: 100%;
         margin: 4px;
         min-height: 100%;
@@ -166,9 +179,10 @@ li.menu-item.active{
     .menu_burgers {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        margin:4px;
         width: 95vw;
+        
        
 
     }
@@ -182,12 +196,42 @@ li.menu-item.active{
     width: 90vw;
 }
 
-img  {
-    width: 95vw;
-    height: 40vh;
-    padding-left: 20px;
+.precio
+{ 
+    display: flex;
+justify-content: space-evenly;
+  width:5vw;
 }
 
+.ham,
+.description {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+.cheese,
+.classic {
+    width: 80vw;
+    height: 60vh;
+    padding-left:5em;
+}
+.burgerfull{
+    width:90vw;
+    height: 50vh;
+    padding: 20px 5em;
+}
+.agregar {
+    font-display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+   
+    
+    
+   
+   
+}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -203,7 +247,7 @@ img  {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98vw;
+    width: 100vw;
     height: 100%;
     margin: 4px;
     min-height: 100%;
@@ -226,22 +270,21 @@ img  {
     }
 
     .full{
-        width: 50vw;
-        height:100vh;
+        width: 30vw;
+        height:10vh;
     }
 
     .cheese{
         width:100vw;
         height: 30vh;
     }
+
+    .classic{
+        width: 30vw;
+    }
     
 
-    img {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        width:30vw;
-}
+
     
     .producto-precio {
         display: flex;
@@ -272,9 +315,85 @@ img  {
         flex-wrap: wrap;
         width: 40vw;
     }
+
+    .agregar {
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: flex-end;
+       align-items: flex-end;
+        padding: 10px;
+        
+}
 }
 
 
+@media screen and (min-width: 1025px) and (max-width: 1600px){
+.video_main{
+    width: 100vw;
+    height:95vh;
+   margin-top: 30px;
+   
+    }
+
+    .menu_burgers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 80vh;
+        
+       
+
+    }
+
+.full-maquina,
+.cheddar,
+.clasica {
+    border: 2px solid #a7a7a7;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.874);
+    width: 30vw;
+    height: 75vh;
+}
+
+.precio
+{ 
+    display: flex;
+justify-content: space-evenly;
+  width:45vw;
+}
+
+.ham,
+.description {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
 
 
+.cheese,
+.classic {
+    width: 25vw;
+    height: 40vh;
+    margin-left:30px;
+    }
 
+    .burgerfull{
+        width:25vw;
+        height:35vh ;
+        margin: 15px;
+    }
+
+}
+.agregar {
+    font-display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+   
+    
+    
+   
+   
+
+}
