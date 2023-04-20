@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +5,7 @@
     font-family: 'open sans';
 }
 
-body{
+body {
     background-image: url(https://assets.adnradio.cl/2020/05/Uber-Eats-1-e1590709851475-925x470.jpg);
     background-size: cover;
     background-position: center;
@@ -57,4 +55,59 @@ nav {
     color: white;
     text-decoration: none;
     padding: 15px 15px 15px 20px;
+}
+
+h1 {
+    color: white;
+}
+
+#formularioUsuarios {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 25vw;
+    height: 50vh;
+    background-color: rgb(193, 155, 29, 0.874);
+}
+
+label {
+    margin: 30px;
+}
+
+#nombre {
+    margin-top: 30px;
+}
+
+#email {
+    margin-left: 11px;
+}
+
+#domicilio {
+    margin-left: -12px;
+}
+
+#nota {
+    margin:10px 1px;
+    height: 25vh;
+    width: 20vw;
+}
+
+
+
+.enviar {
+    margin: 10px 180px;
+}
+
+footer {
+    bottom: 0;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
 }

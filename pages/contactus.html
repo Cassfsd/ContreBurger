@@ -36,6 +36,7 @@
     </header>
     <main>
         <h1>Ingrese datos para su envio</h1>
+        <body>
         <form id="formularioUsuarios">
             <div class="inputContainer">
                 <label for="nombre">Ingrese su nombre</label>
@@ -45,7 +46,6 @@
                 <label for="email">Ingrese su Email</label>
                 <input type="text" id="email" name="email" placeholder="carlosgomez@gmail.com">
             </div>
-<body>
     <div class="inputContainer">
         <label for="domicilio">Ingrese su domicilio</label>
         <input type="text" id="domicilio" name="domicilio" placeholder="San Martin 234">
@@ -57,11 +57,16 @@
                 <option value="300">$300</option>
                 <option value="500">$500</option>
                 <option value="1000">$1000</option>
+                <option value="Sin propina">$0</option>
                 </select>
+                <div class="inputContainer_form">
+                    <label for="notas"></label>
+                    <input type="text" id="nota" name="nota" placeholder="Añade una nota">
+                </div>
     </div>
-            <input type="submit" value="Confirmar Pedido" class="btn-confirmarpedido"/>
+            <input class="enviar" type="submit" value="Confirmar Pedido" class="btn-confirmarpedido"/>
         </form>
-        <div class="contenedorUsuarios"></div>
+        <!-- <div class="contenedorUsuarios"></div> -->
     </main>
     <footer>
         <p>Contreburguer - Pedidos Online </p>
